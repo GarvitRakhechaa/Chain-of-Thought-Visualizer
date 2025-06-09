@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import os
 from pydantic import BaseModel
-from mangum import Mangum
+# from mangum import Mangum
 import json
 from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
@@ -96,4 +96,4 @@ def Cot_visualizer(req: InputRequest):
         break
     return {"messages": Messages}
 
-handler = Mangum(app)  
+# handler = Mangum(app)  

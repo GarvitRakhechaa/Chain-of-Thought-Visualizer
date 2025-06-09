@@ -7,7 +7,7 @@ async function sendQuery() {
     messagesDiv.innerHTML = `<p class="loader">Thinking... 🔄</p>`;
 
       try {
-        const res = await fetch("http://localhost:8000/chat", {
+        const res = await fetch("https://chain-of-thought-visualizer-backend.vercel.app/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ input_str: input }),

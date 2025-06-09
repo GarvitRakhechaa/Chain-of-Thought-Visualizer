@@ -1,0 +1,90 @@
+body {
+  background: #0f0f0f;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background: #1a1a1a;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+main {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: white;
+}
+
+button {
+  padding: 12px 20px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+    background-color: #00ffff;
+}
+
+.message-box {
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+.step {
+  background: #1c1c1c;
+  border-left: 6px solid #00bfff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00000060;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step strong {
+  color: #00ffff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.loader {
+  color: #00bfff;
+  font-style: italic;
+}
